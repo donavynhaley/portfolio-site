@@ -1,0 +1,30 @@
+.home-container{
+    background-color: $bs-teal;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: calc(6rem + 100px);
+    padding-bottom: 6rem;
+}
+.home-contents {
+    max-width: 80%;
+    font-family: $font-montserrat;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    .home-heading {
+        font-size: 4rem;
+        line-height: 3.5rem;
+        text-transform: uppercase;
+        
+    }
+}
+.headshot {
+    width: 15rem;
+    margin-bottom: 3rem;
+}
+.brackets{
+    width: 2rem;
+}
