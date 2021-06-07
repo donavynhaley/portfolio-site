@@ -1,7 +1,10 @@
 import React,{useState} from 'react'
 import Divider from '../common/Divider'
 import Project from '../common/Project'
-import cabin from '../assets/projects/cabin.png'
+import chess from '../assets/projects/chess.png'
+import emotion from '../assets/projects/emotion.png'
+import water from '../assets/projects/water.png'
+
 const Portfolio = ({openModal}) => {
     return (
         <div className="page-section portfolio">
@@ -10,7 +13,10 @@ const Portfolio = ({openModal}) => {
             </div>
             <Divider isDark={true} />
             <div className="projects">
-            <Project title={"Chess AI"} img={cabin} githubLink={"https://github.com"} liveLink ={"https://developer.mozilla.org/en-US/docs/Web/CSS/position"} openModal={openModal}/>                
+            <Project title={"Chess AI"} img={chess} githubLink={"https://github.com"} liveLink ={"https://developer.mozilla.org/en-US/docs/Web/CSS/position"} openModal={openModal}/>
+            <Project title={"Water Plants Tracker"} img={water} githubLink={"https://github.com"} liveLink ={"https://developer.mozilla.org/en-US/docs/Web/CSS/position"} openModal={openModal}/>                
+            <Project title={"Emotion Tracker"} img={emotion} githubLink={"https://github.com"} liveLink ={"https://developer.mozilla.org/en-US/docs/Web/CSS/position"} openModal={openModal}/>                
+                
             </div>
         </div>
     )
