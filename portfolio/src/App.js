@@ -4,6 +4,7 @@ import Home from './sections/Home'
 import Portfolio from "./sections/Portfolio";
 import Modal from './common/Modal'
 import About from './sections/About'
+import Contact from './sections/Contact'
 function App() {
   const [showModal, setShowModal] = useState(false)
 
@@ -17,8 +18,9 @@ function App() {
         <Home />
         <Portfolio openModal={openModal} />
         <About />
+        <Contact />
 
-        <div className="page-section contact"></div>
+
 
       </div>
       <Modal showModal={showModal} setShowModal={setShowModal} />

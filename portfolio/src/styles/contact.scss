@@ -1,0 +1,31 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 3rem;
+}
+
+.input {
+    border: 0;
+    width: 50rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid $bs-secondary;
+}
+.input-error {
+    border-bottom: 1px solid $bs-red;
+
+}
+.error {
+    color: $bs-red;
+}

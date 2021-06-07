@@ -19,9 +19,14 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .btn-primary {
-    color: #fff;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
+    color: $bs-white;
+    background-color: $bs-primary;
+    border-color: $bs-primary;
+    background-color: $bs-primary;
+    &:hover{
+        background-color: $bs-green;
+        border-color: $bs-green;
+    }
 }
 .button-icon{
     width: 1rem;
@@ -30,4 +35,5 @@
 .xl{
     padding: 1rem 1.75rem;
     font-size: 1.25rem;
+    align-self: flex-start;
 }
