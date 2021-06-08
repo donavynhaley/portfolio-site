@@ -5,12 +5,16 @@ import Portfolio from "./sections/Portfolio";
 import Modal from './common/Modal'
 import About from './sections/About'
 import Contact from './sections/Contact'
+import Toast from './common/Toast'
+
 function App() {
   const [showModal, setShowModal] = useState(false)
 
   const openModal = () => {
     setShowModal(!showModal)
   }
+  const [toastList, setToastList] = useState([]);
+  const [toastCount, setToastCount] = useState(0)
   return (
     <>
       <div className="container">
@@ -18,11 +22,9 @@ function App() {
         <Home />
         <Portfolio openModal={openModal} />
         <About />
-        <Contact />
-
-
-
+        <Contact toastList={toastList} setToastList={setToastList} toastCount={toastCount} setToastCount={setToastCount} />
       </div>
+      <Toast toastList={toastList} setToastList={setToastList} />
       <Modal showModal={showModal} setShowModal={setShowModal} />
     </>
   );
