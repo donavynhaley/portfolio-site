@@ -36,6 +36,7 @@
 .navbar-nav {
     display: flex;
     margin-bottom: 0;
+
     a {
         text-decoration: none;
         color: white;
@@ -57,4 +58,17 @@
 #resume{
     margin-left: 1rem;
     text-transform: uppercase;
+}
+.nav-link{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.active{
+    color: $bs-white;
+    background-color: $bs-primary;
+    &:hover{
+        color: $bs-primary;
+        background-color: $bs-white;
+    }
 }
