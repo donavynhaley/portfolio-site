@@ -6,6 +6,7 @@ import Modal from './common/Modal'
 import About from './sections/About'
 import Contact from './sections/Contact'
 import Toast from './common/Toast'
+import Footer from './sections/Footer'
 
 function App() {
   const [showModal, setShowModal] = useState(false)
@@ -23,6 +24,7 @@ function App() {
         <Portfolio openModal={openModal} />
         <About />
         <Contact toastList={toastList} setToastList={setToastList} toastCount={toastCount} setToastCount={setToastCount} />
+        <Footer />
       </div>
       <Toast toastList={toastList} setToastList={setToastList} />
       <Modal showModal={showModal} setShowModal={setShowModal} />

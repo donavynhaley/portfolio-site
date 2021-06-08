@@ -82,7 +82,6 @@ const Contact = ({ toastList, setToastList, toastCount, setToastCount }) => {
 
     return (
         <section className="page-section contact" id="contact">
-            <Button clickFunction={() => addToast(true)} text="toast" />
             <h2 className="section-heading" >Contact</h2>
             <Divider isDark={true} />
             <div className="form-container">
@@ -107,7 +106,7 @@ const Contact = ({ toastList, setToastList, toastCount, setToastCount }) => {
                                 {errors.email && touched.email ? <div className="error">{errors.email}</div> : null}
                             </div>
                             <div className="form-group">
-                                <Field name="message" className={`input ${errors.message && touched.message ? "input-error" : ""}`} placeholder="Message" id="message-input" />
+                                <Field as="textarea" name="message" className={`input ${errors.message && touched.message ? "input-error" : ""}`} placeholder="Message" id="message-input" />
                                 {errors.message && touched.message ? (
                                     <div className="error">{errors.message}</div>
                                 ) : null}
