@@ -44,9 +44,17 @@
         }
         padding-right: 1rem;
         padding-left: 1rem;
+        font-size: 1.1rem;
     }
     .nav-item{
+        display: flex;
+        align-items: center;
         margin-left: 0.25rem;
         margin-right: 0.25rem;
+
     }
+}
+#resume{
+    margin-left: 1rem;
+    text-transform: uppercase;
 }

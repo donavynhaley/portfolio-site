@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
+import Button from '../common/Button'
 const Navbar = () => {
     const [shrink, setShrink] = useState(false);
     // shrinks navbar if user scrolls down
@@ -23,7 +23,9 @@ const Navbar = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="#contact">Contact</a>
                     </li>
-
+                    <li className="nav-item" id="resume">
+                        <Button text="Resume" />
+                    </li>
                 </ul>
             </div>
         </nav>
