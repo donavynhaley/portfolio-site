@@ -2,7 +2,6 @@ import React from 'react'
 import githubSVG from '../assets/socials/github.svg'
 import linkedinSVG from '../assets/socials/linkedin.svg'
 import devSVG from '../assets/socials/dev.svg'
-import Button from '../common/Button'
 const Footer = () => {
     return (
         <>
@@ -11,13 +10,13 @@ const Footer = () => {
                     <div className="socials">
                         <h4>Socials</h4>
                         <div className="links">
-                            <a className="link" href="www.google.com" target="_blank" rel="noreferrer">
+                            <a className="link" href="https://github.com/donavynhaley" target="_blank" rel="noreferrer">
                                 <img src={githubSVG} alt="github" />
                             </a>
-                            <a className="link" href="www.google.com" target="_blank" rel="noreferrer">
+                            <a className="link" href="https://www.linkedin.com/in/donavynhaley/" target="_blank" rel="noreferrer">
                                 <img src={linkedinSVG} alt="linkedin" />
                             </a>
-                            <a className="link" href="www.google.com" target="_blank" rel="noreferrer">
+                            <a className="link" href="https://dev.to/donavynhaley" target="_blank" rel="noreferrer">
                                 <img src={devSVG} alt="dev.to" />
                             </a>
                         </div>

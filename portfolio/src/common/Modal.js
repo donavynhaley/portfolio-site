@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import ModalCloseIcon from '../assets/cancel.svg';
 import closeSVG from '../assets/close.svg'
 import { useSpring, animated } from 'react-spring';
 import Divider from "./Divider"
