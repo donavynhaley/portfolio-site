@@ -3,6 +3,7 @@ import Divider from '../common/Divider'
 import Button from '../common/Button'
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
+import axios from 'axios';
 
 const ContactSchema = Yup.object().shape({
     name: Yup.string()
@@ -16,8 +17,6 @@ const ContactSchema = Yup.object().shape({
 
 const Contact = () => {
     const [showLabel, setShowLabel] = useState(false);
-
-
 
     return (
         <section className="page-section contact" id="contact">
@@ -33,7 +32,24 @@ const Contact = () => {
                     validationSchema={ContactSchema}
                     onSubmit={values => {
                         // same shape as initial values
-                        console.log(values);
+                        const data = {
+                            service_id: process.env.REACT_APP_SERVICE_ID,
+                            template_id: process.env.REACT_APP_TEMPLATE_ID,
+                            user_id: process.env.REACT_APP_USER_ID,
+                            template_params: {
+                                'name': values.name,
+                                'email': values.email,
+                                'message': values.message,
+                            }
+
+                        }
+                        axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
+                            .then(function (response) {
+                                console.log(response);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            });
                     }}
                 >
                     {({ errors, touched }) => (
