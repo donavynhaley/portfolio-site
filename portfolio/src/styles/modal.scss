@@ -85,13 +85,11 @@
             width: 100%;
             padding-bottom: 2%;
         }
+        .top-modal{
+            margin-top: 25%;
+        }
     }
-    // Mobile
-    @media (max-width: 375px) {
-    .top-modal{
-        margin-top: 25%;
-    }
-}
+
 }
 .modal-text{
     width: 50%;
