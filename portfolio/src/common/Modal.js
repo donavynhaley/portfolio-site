@@ -22,9 +22,28 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
       desc: "This is a solo project that I undertook to test my skills and learn more about artificial intelligence(A.I.). I was inspired after watching Google's AlphaZero A.I. beat Stockfish 8 after playing by itself for only four hours. I also wanted to give the user a visualization of what decisions the bot is making.",
       bullets: ["Set out to visualize chess game logic using Chessboardjsx and Chessjs this web application allows the user to play against a chess bot and see the bot's decisions. ", "Implemented Chess Bot using the same methodology as Stockfish, enabling the user to play against it. ", "Integrated a tracking system using a node backend, so players can see their completed games."],
       img: chessScreen,
-      technologies: "React | Node | Chesboardjsx | Chessjs | Stockfish.js",
+      technologies: [{
+        name: "React",
+        link: "https://reactjs.org",
+      },
+      {
+        name: "Node",
+        link: "https://nodejs.org/en/",
+      },
+      {
+        name: "Chessboard.jsx",
+        link: "https://chessboardjsx.com",
+      },
+      {
+        name: "Chess.js",
+        link: "https://github.com/jhlywa/chess.js",
+      },
+      {
+        name: "Stockfish.js",
+        link: "https://github.com/nmrugg/stockfish.js/",
+      }],
       github: "https://github.com/donavynhaley/chess-ai",
-      live: "",
+      live: null,
       devto: null
     }
   ]
@@ -63,19 +82,28 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
                   <div className="img-border">
                     <img className="howard" alt="old man" src={img} />
                     <h5>Technologies</h5>
-                    <p>{technologies}</p>
+                    {technologies.map((item, i) => {
+                      if (technologies.length !== i + 1)
+                        return <><a href={item.link} target="_blank" rel="noreferrer">{item.name} </a>| </>
+                      else
+                        return <a href={item.link} target="_blank" rel="noreferrer">{item.name}</a>
+                    })}
                   </div>
                 </div>
                 <div className="modal-footer">
                   <a className="link" href={github} target="_blank" rel="noreferrer">
                     <img src={githubSVG} alt="github" />
                   </a>
-                  <a className="link" href={live} target="_blank" rel="noreferrer">
-                    <img src={globeSVG} alt="demo" />
-                  </a>
-                  <a className="link" href={devto} target="_blank" rel="noreferrer">
-                    <img src={devSVG} alt="dev.to" />
-                  </a>
+                  {live !== null ?
+                    <a className="link" href={live} target="_blank" rel="noreferrer">
+                      <img src={globeSVG} alt="demo" />
+                    </a> : null}
+
+                  {devto !== null ?
+                    <a className="link" href={devto} target="_blank" rel="noreferrer">
+                      <img src={devSVG} alt="dev.to" />
+                    </a> : null}
+
                 </div>
               </div>
               <img className="close-button" src={closeSVG} alt="close"
