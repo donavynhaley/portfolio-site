@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f1a724b1.chunk.css",
+    "main.js": "/static/js/main.150973da.chunk.js",
+    "main.js.map": "/static/js/main.150973da.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e9941572.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e9941572.js.map",
+    "static/js/2.6a8274eb.chunk.js": "/static/js/2.6a8274eb.chunk.js",
+    "static/js/2.6a8274eb.chunk.js.map": "/static/js/2.6a8274eb.chunk.js.map",
+    "static/js/3.a4ed5164.chunk.js": "/static/js/3.a4ed5164.chunk.js",
+    "static/js/3.a4ed5164.chunk.js.map": "/static/js/3.a4ed5164.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f1a724b1.chunk.css.map": "/static/css/main.f1a724b1.chunk.css.map",
+    "static/js/2.6a8274eb.chunk.js.LICENSE.txt": "/static/js/2.6a8274eb.chunk.js.LICENSE.txt",
+    "static/media/avataaars.6d84e9b7.svg": "/static/media/avataaars.6d84e9b7.svg",
+    "static/media/brackets.d3d9210e.svg": "/static/media/brackets.d3d9210e.svg",
+    "static/media/check.d639b7bb.svg": "/static/media/check.d639b7bb.svg",
+    "static/media/chess.ee7954e7.png": "/static/media/chess.ee7954e7.png",
+    "static/media/chessScreen.d7f062ad.png": "/static/media/chessScreen.d7f062ad.png",
+    "static/media/close.dc9b1dc4.svg": "/static/media/close.dc9b1dc4.svg",
+    "static/media/dev.5f5642d6.svg": "/static/media/dev.5f5642d6.svg",
+    "static/media/download.1a35218e.svg": "/static/media/download.1a35218e.svg",
+    "static/media/emotion.43ecd9e7.png": "/static/media/emotion.43ecd9e7.png",
+    "static/media/emotionScreen.2dda1c64.png": "/static/media/emotionScreen.2dda1c64.png",
+    "static/media/error.f4c49f9a.svg": "/static/media/error.f4c49f9a.svg",
+    "static/media/github.d205c6f8.svg": "/static/media/github.d205c6f8.svg",
+    "static/media/github.fa0212fe.svg": "/static/media/github.fa0212fe.svg",
+    "static/media/globe.00145644.svg": "/static/media/globe.00145644.svg",
+    "static/media/linkedin.3ab0008f.svg": "/static/media/linkedin.3ab0008f.svg",
+    "static/media/plus.68c26883.svg": "/static/media/plus.68c26883.svg",
+    "static/media/resume.ad0afa46.pdf": "/static/media/resume.ad0afa46.pdf",
+    "static/media/water.65656f1d.png": "/static/media/water.65656f1d.png",
+    "static/media/waterScreen.b8f81c1a.png": "/static/media/waterScreen.b8f81c1a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9941572.js",
+    "static/js/2.6a8274eb.chunk.js",
+    "static/css/main.f1a724b1.chunk.css",
+    "static/js/main.150973da.chunk.js"
+  ]
+}
