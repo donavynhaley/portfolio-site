@@ -3,6 +3,8 @@ import closeSVG from '../assets/close.svg'
 import { useSpring, animated } from 'react-spring';
 import Divider from "./Divider"
 import chessScreen from '../assets/projects/chessScreen.png'
+import waterScreen from '../assets/projects/waterScreen.png'
+import emotionScreen from '../assets/projects/emotionScreen.png'
 import githubSVG from '../assets/socials/github.svg'
 import globeSVG from '../assets/globe.svg'
 import devSVG from '../assets/socials/dev.svg'
@@ -44,8 +46,85 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
       github: "https://github.com/donavynhaley/chess-ai",
       live: null,
       devto: null
-    }
-  ]
+    },
+    {
+      title: "Water My Plants",
+      desc: "This was a group project I did while at Lambda School to create an app from the ground up. We were given a notion document with our MVP features and stretch goals. In this project, I was the lead front-end developer. The app allows a user to log in and add their plants and the app will remind the user when to water them.",
+      bullets: ["Implemented redux throughout the app to handle state management.", "I Created a dashboard that displayed the logged-in user's plants.", "Designed and implemented a system in which users can easily add, delete, update their plants all integrated with our backend.", "Created a profile for the user to which they can make changes."],
+      img: waterScreen,
+      technologies: [{
+        name: "React",
+        link: "https://reactjs.org",
+      },
+      {
+        name: "Node",
+        link: "https://nodejs.org/en/",
+      },
+      {
+        name: "Redux",
+        link: "https://redux.js.org",
+      },
+      {
+        name: "Axios",
+        link: "https://www.npmjs.com/package/axios",
+      },
+      {
+        name: "Reactstrap",
+        link: "https://reactstrap.github.io",
+      },
+      {
+        name: "Styled-Components",
+        link: "https://styled-components.com",
+      },
+      {
+        name: "Yup",
+        link: "https://www.npmjs.com/package/yup",
+      },
+      {
+        name: "Bootstrap",
+        link: "https://getbootstrap.com",
+      },
+      {
+        name: "Material-UI",
+        link: "https://material-ui.com",
+      },
+      ],
+      github: "https://github.com/BW-Water-My-Plants-1-Cori/front-end",
+      live: "https://water-my-plants-ten.vercel.app/login",
+      devto: null
+    },
+    {
+      title: "Boys & Girls Club",
+      desc: "This project was created with a team of eight developers over two months. Every week we met with the stakeholder to check in on project development and integrate their suggestions. The app allows staff at Boys & Girls Club to log in and adds their member's sentiment data into the app. Then an admin can log in and view that data.",
+      bullets: ["Implemented importing members functionality so admins can add new members to track.", "Created a checking function in javascript so that admins can view the uploaded members before submitting.", "Collaborated with a team of six to create pages in the application that allowed the user to collect sentiment data from members."],
+      img: emotionScreen,
+      technologies: [{
+        name: "React",
+        link: "https://reactjs.org",
+      },
+      {
+        name: "Redux",
+        link: "https://redux.js.org",
+      },
+      {
+        name: "Axios",
+        link: "https://www.npmjs.com/package/axios",
+      },
+      {
+        name: "Ant Design",
+        link: "https://ant.design",
+      },
+      {
+        name: "Styled-Components",
+        link: "https://styled-components.com",
+      },
+      ],
+      github: "https://github.com/donavynhaley/bg-emotion-tracker-fe-b",
+      live: "https://b.bgexperiencetracker.dev/login",
+      devto: "https://dev.to/donavynhaley/my-first-lambda-labs-project-40ec"
+    },
+    
+    ]
   const animation = useSpring({
     config: {
       duration: 250
@@ -53,13 +132,6 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
     opacity: showModal ? 1 : 0,
   });
 
-  const blurBackground = () => {
-    const container = document.querySelector(".container")
-    console.log(container)
-   }
-  if(showModal) {
-    blurBackground()
-  }
   const { title, desc, bullets, img, technologies, github, live, devto } = modals[modalType]
   return (
     <>
@@ -76,19 +148,19 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
                   <div className="modal-text">
                     <p>{desc} </p>
                     <ul className="bullet-points">
-                      {bullets.map((item) => {
-                        return <li className="bullets">{item}</li>
+                      {bullets.map((item, i) => {
+                        return  <li key={i} className="bullets">{item}</li>
                       })}
                     </ul>
                   </div>
                   <div className="img-border">
-                    <img className="howard" alt="old man" src={img} />
+                    <img  alt="project" src={img} />
                     <h5>Technologies</h5>
                     {technologies.map((item, i) => {
                       if (technologies.length !== i + 1)
-                        return <><a href={item.link} target="_blank" rel="noreferrer">{item.name} </a>| </>
+                        return <><a key={i} href={item.link} target="_blank" rel="noreferrer">{item.name} </a>| </>
                       else
-                        return <a href={item.link} target="_blank" rel="noreferrer">{item.name}</a>
+                        return <a key={i} href={item.link} target="_blank" rel="noreferrer">{item.name}</a>
                     })}
                   </div>
                 </div>

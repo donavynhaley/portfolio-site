@@ -14,8 +14,8 @@ const Portfolio = ({ openModal, setModalType }) => {
             <Divider isDark={true} />
             <div className="projects">
                 <Project title={"Chess AI"} img={chess} githubLink={"https://github.com/donavynhaley/chess-ai"} liveLink={"https://developer.mozilla.org/en-US/docs/Web/CSS/position"} openModal={openModal} setModalType={setModalType} modalType={0} />
-                <Project title={"Water Plants Tracker"} img={water} githubLink={"https://github.com"} liveLink={"https://developer.mozilla.org/en-US/docs/Web/CSS/position"} openModal={openModal} setModalType={setModalType} modalType={1} />
-                <Project title={"Emotion Tracker"} img={emotion} githubLink={"https://github.com"} liveLink={"https://developer.mozilla.org/en-US/docs/Web/CSS/position"} openModal={openModal} setModalType={setModalType} modalType={2} />
+                <Project title={"Water Plants Tracker"} img={water} githubLink={"https://github.com/BW-Water-My-Plants-1-Cori/front-end"} liveLink={"https://water-my-plants-ten.vercel.app/login"} openModal={openModal} setModalType={setModalType} modalType={1} />
+                <Project title={"Emotion Tracker"} img={emotion} githubLink={"https://github.com/donavynhaley/bg-emotion-tracker-fe-b"} liveLink={"https://b.bgexperiencetracker.dev"} openModal={openModal} setModalType={setModalType} modalType={2} />
 
             </div>
         </div>
