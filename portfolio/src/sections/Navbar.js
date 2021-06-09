@@ -4,6 +4,7 @@ import resume from '../assets/resume.pdf'
 
 const Navbar = () => {
     const [shrink, setShrink] = useState(false);
+    const [mobalMenu, setMobalMenu] = useState(false)
     const [activePortfolio, setActivePortfolio] = useState(false);
     const [activeAbout, setActiveAbout] = useState(false);
     const [activeContact, setActiveContact] = useState(false);
@@ -43,16 +44,19 @@ const Navbar = () => {
     return (
         <nav className={`nav-container ${shrink ? "navbar-shrink" : ""} `} id="#mainNav">
             <div className="navbar">
-                <a className="name" href="#home">Donavyn Haley</a>
-                <ul className="navbar-nav">
+                <div className="name-container">
+                    <a className="name" href="#home">Donavyn Haley</a>
+                    <Button text="MENU" addClass="mobile-menu-button" clickFunction={() => setMobalMenu(!mobalMenu)} />
+                </div>
+                <ul className={`navbar-nav ${mobalMenu ? "navbar-active fade-in" : ""}`}>
                     <li className="nav-item">
                         <a className={`nav-link ${activePortfolio ? "active" : ""}`} href="#portfolio">Portfolio</a>
                     </li>
-                    <li className={`nav-link ${activeAbout ? "active" : ""}`}>
-                        <a className="nav-link" href="#about">About</a>
+                    <li className={`nav-item`}>
+                        <a className={`nav-link ${activeAbout ? "active" : ""}`} href="#about">About</a>
                     </li>
-                    <li className={`nav-link ${activeContact ? "active" : ""}`}>
-                        <a className="nav-link" href="#contact">Contact</a>
+                    <li className={`nav-item`}>
+                        <a className={`nav-link ${activeContact ? "active" : ""}`} href="#contact">Contact</a>
                     </li>
                     <li className="nav-item" id="resume">
                         <a href={resume} download>

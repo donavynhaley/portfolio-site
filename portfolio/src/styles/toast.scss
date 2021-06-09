@@ -6,7 +6,11 @@
     bottom: 12px;
     right: 12px;
     transition: transform .6s ease-in-out;
-    animation: toast-in-right .7s;
+	animation: toast-in-right .7s;
+	// Mobile
+    @media (min-width: 320px) and (max-width: 600px) {
+		width: 80%;
+	}
 }
 
 .notification {

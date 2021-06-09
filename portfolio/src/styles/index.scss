@@ -1,18 +1,19 @@
 @charset "UTF-8";
 @import "./reset.scss";
 @import "./variables.scss";
-@import "./navbar.scss";
 @import "./home.scss";
 @import "./divider.scss";
 @import "./portfolio.scss";
 @import "./modal.scss";
 @import "./button.scss";
+@import "./navbar.scss";
+
 @import "./about.scss";
 @import "./section.scss";
 @import "./contact.scss";
 @import "./toast.scss";
 @import "./footer.scss";
-
+@import "./largeScreens.scss";
 *,
 *::before,
 *::after {

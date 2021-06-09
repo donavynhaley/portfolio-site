@@ -1,0 +1,295 @@
+// 2k Screen
+@media (min-width: 2048px){
+    /**** Reusable components ****/
+
+    // Divider component
+    .divider-custom-line{
+        max-width: 20rem !important;
+        height: 0.35rem !important;
+    }
+    .brackets{
+        width: 4rem;
+    }
+
+    // Section h2
+    .section-heading{
+        font-size: 5rem;
+    }
+
+    // Modal component
+    .modal-text p {
+        font-size: 2rem;
+    }
+    .bullets{
+        font-size: 2rem;
+    }
+    .techs {
+        h5{
+            font-size: 2.2rem;
+        }
+            font-size: 2rem;
+    }
+    .modal-footer .link {
+        width: 9.75rem;
+        height: 9.75rem;
+        img{
+            width: 6rem;
+        }
+    }
+    .modal-content .top-modal{
+        margin-top: 11rem;
+    }
+
+    // toast
+    .notification{
+        max-height: 15%;
+        button {
+            font-size: 2rem;
+        }
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
+        .notification-title{
+            font-size: 2.2rem;
+            margin-bottom: 5%;
+        }
+        p {
+            margin-left: 5rem;
+        }
+    }
+    .notification-message{
+        font-size: 2rem;
+    }
+
+
+    /**** Sections ****/
+
+    // Nav
+    .navbar{
+        .name-container{
+            font-size: 2.5rem;
+        }
+        .navbar-nav .nav-item .nav-link{
+            font-size: 2rem;
+        }
+        #resume .btn{
+            padding: 1rem;
+            font-size: 2rem;
+        }
+    }
+
+    // Home section
+    .home-contents {
+        .headshot{
+            width: 20rem;
+            margin-bottom: 1.2rem;
+        }
+        .home-heading{
+            font-size: 8rem;
+        }
+        .home-subheading{
+            font-size: 2rem;
+        }
+    }
+
+    // Portfolio Section
+    .project{
+        h3{
+            font-size: 3rem;
+            line-height: 2;
+        }
+        .portfolio-item{
+            max-width: 35rem;
+        }
+        .item-caption-content .icons a img{
+            width: 8rem;
+        }
+        .item-caption-content .click-modal img {
+            width: 5rem;
+        }
+    }
+
+    // About Section
+    .about p {
+        font-size: 2.5rem;
+    }
+
+    // Contact Section 
+    .form-group .input {
+        height: 6rem;
+        font-size: 2.5rem;
+    }
+    form .xl {
+        padding: 1.5rem  3rem;
+        font-size: 2.5rem;
+    }
+
+    // Footer
+    .socials h4{
+        font-size: 3.5rem;
+    }
+    .links .link {
+        width: 6.75rem;
+        height: 6.75rem;
+        img{
+            width: 4rem;
+        }
+    }
+    @media (min-width: 3840px) {
+        /**** Reusable components ****/
+
+        // Divider component
+        .divider-custom{
+            margin-top: 6rem;
+        }
+        .divider-custom-line{
+            max-width: 40rem !important;
+            height: 0.7rem !important;
+        }
+        .brackets{
+            width: 6rem;
+        }
+
+        // Sections
+        .section-heading{
+            font-size: 10rem;
+        }
+        .page-section{
+            padding-top: 12rem;
+            padding-top: 12rem;
+        }
+
+        // Modal component
+        .modal-text p {
+            font-size: 4rem;
+        }
+        .bullets{
+            font-size: 4rem;
+        }
+        .techs {
+            h5{
+                font-size: 4.4rem;
+            }
+                font-size: 4rem;
+        }
+        .modal-footer .link {
+            width: 11.75rem;
+            height: 11.75rem;
+            img{
+                width: 8rem;
+            }
+        }
+        .modal-content .top-modal{
+            margin-top: 14rem;
+        }
+        .close-button{
+            height: 5%;
+            width: 5%;
+        }
+
+        // toast
+        .notification{
+            max-height: 15%;
+            button {
+                font-size: 4rem;
+            }
+            img {
+                width: 6rem;
+                height: 6em;
+            }
+            .notification-title{
+                font-size: 4.2rem;
+                margin-bottom: 10%;
+            }
+            p {
+                margin-left: 10rem;
+            }
+        }
+        .notification-message{
+            font-size: 4rem;
+        }
+
+
+        /**** Sections ****/
+
+        // Nav
+        .navbar{
+            .name-container{
+                font-size: 3.5rem;
+            }
+            .navbar-nav .nav-item .nav-link{
+                font-size: 3rem;
+            }
+            #resume .btn{
+                padding: 2rem;
+                font-size: 3rem;
+            }
+        }
+
+        // Home section
+        .home-contents {
+            .headshot{
+                width: 40rem;
+                margin-bottom: 3.4rem;
+                margin-top: 3.4rem;
+            }
+            .home-heading{
+                font-size: 16rem;
+            }
+            .home-subheading{
+                font-size: 4rem;
+            }
+        }
+
+        // Portfolio Section
+        .project{
+            h3{
+                font-size: 6rem;
+                line-height: 2;
+            }
+            .portfolio-item{
+                max-width: 70rem;
+            }
+            .item-caption-content .icons a img{
+                width: 16rem;
+            }
+            .item-caption-content .click-modal img {
+                width: 10rem;
+            }
+        }
+
+        // About Section
+        .about p {
+            font-size: 5rem;
+        }
+
+        // Contact Section 
+        .form-group .input {
+            height: 12rem;
+            font-size: 5rem;
+        }
+        #message-input{
+            height: 24rem;
+        }
+        form .xl {
+            padding: 2.5rem  4rem;
+            font-size: 3.5rem;
+        }
+        .error {
+            font-size: 2rem;
+        }
+
+        // Footer
+        .socials h4{
+            font-size: 7rem;
+        }
+        .links .link {
+            width: 9.75rem;
+            height: 9.75rem;
+            img{
+                width: 6rem;
+            }
+        }
+    }
+}

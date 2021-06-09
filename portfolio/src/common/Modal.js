@@ -123,8 +123,8 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
       live: "https://b.bgexperiencetracker.dev/login",
       devto: "https://dev.to/donavynhaley/my-first-lambda-labs-project-40ec"
     },
-    
-    ]
+
+  ]
   const animation = useSpring({
     config: {
       duration: 250
@@ -145,40 +145,45 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
                   <Divider isDark={true} />
                 </div>
                 <div className="modal-body">
-                  <div className="modal-text">
-                    <p>{desc} </p>
-                    <ul className="bullet-points">
-                      {bullets.map((item, i) => {
-                        return  <li key={i} className="bullets">{item}</li>
-                      })}
-                    </ul>
+                  <div className="split">
+                    <div className="modal-text">
+                      <p>{desc} </p>
+                      <ul className="bullet-points">
+                        {bullets.map((item, i) => {
+                          return <li key={i} className="bullets">{item}</li>
+                        })}
+                      </ul>
+                    </div>
+                    <div className="img-border">
+                      <img alt="project" src={img} />
+                      <div className="techs">
+                        <h5>Technologies</h5>
+                        {technologies.map((item, i) => {
+                          if (technologies.length !== i + 1)
+                            return <><a key={i} href={item.link} target="_blank" rel="noreferrer">{item.name} </a>| </>
+                          else
+                            return <a key={i} href={item.link} target="_blank" rel="noreferrer">{item.name}</a>
+                        })}
+                      </div>
+                    </div>
                   </div>
-                  <div className="img-border">
-                    <img  alt="project" src={img} />
-                    <h5>Technologies</h5>
-                    {technologies.map((item, i) => {
-                      if (technologies.length !== i + 1)
-                        return <><a key={i} href={item.link} target="_blank" rel="noreferrer">{item.name} </a>| </>
-                      else
-                        return <a key={i} href={item.link} target="_blank" rel="noreferrer">{item.name}</a>
-                    })}
+                  <div className="modal-footer">
+                    <a className="link" href={github} target="_blank" rel="noreferrer">
+                      <img src={githubSVG} alt="github" />
+                    </a>
+                    {live !== null ?
+                      <a className="link" href={live} target="_blank" rel="noreferrer">
+                        <img src={globeSVG} alt="demo" />
+                      </a> : null}
+
+                    {devto !== null ?
+                      <a className="link" href={devto} target="_blank" rel="noreferrer">
+                        <img src={devSVG} alt="dev.to" />
+                      </a> : null}
+
                   </div>
                 </div>
-                <div className="modal-footer">
-                  <a className="link" href={github} target="_blank" rel="noreferrer">
-                    <img src={githubSVG} alt="github" />
-                  </a>
-                  {live !== null ?
-                    <a className="link" href={live} target="_blank" rel="noreferrer">
-                      <img src={globeSVG} alt="demo" />
-                    </a> : null}
 
-                  {devto !== null ?
-                    <a className="link" href={devto} target="_blank" rel="noreferrer">
-                      <img src={devSVG} alt="dev.to" />
-                    </a> : null}
-
-                </div>
               </div>
               <img className="close-button" src={closeSVG} alt="close"
                 onClick={() => setShowModal(prev => !prev)}

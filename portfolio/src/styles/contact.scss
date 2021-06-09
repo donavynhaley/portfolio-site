@@ -3,10 +3,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media (min-width: 320px) and (max-width: 1000px) {
+
+    }
 }
 .form{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }
@@ -14,12 +17,13 @@
 .form-group {
     margin-bottom: 3rem;
 }
+
 #message-input{
     height: 8rem;
 }
 .input {
     border: 0;
-    width: 50rem;
+    width: 60vw;
     height: 4rem;
     font-size: 1.5rem;
     border-bottom: 1px solid $bs-secondary;
