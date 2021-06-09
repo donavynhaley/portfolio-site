@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import closeSVG from '../assets/close.svg'
 import { useSpring, animated } from 'react-spring';
 import Divider from "./Divider"
-import Button from './Button';
 import chessScreen from '../assets/projects/chessScreen.png'
 import githubSVG from '../assets/socials/github.svg'
 import globeSVG from '../assets/globe.svg'
@@ -55,8 +54,11 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
   });
 
   const blurBackground = () => {
-    const container = document.querySelector("container")
-    container.style.className = "blur"
+    const container = document.querySelector(".container")
+    console.log(container)
+   }
+  if(showModal) {
+    blurBackground()
   }
   const { title, desc, bullets, img, technologies, github, live, devto } = modals[modalType]
   return (
@@ -64,7 +66,7 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
       {showModal ? (
         <div className="modal-background" onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
-            <div className="modal-container" showModal={showModal}>
+            <div className="modal-container">
               <div className="modal-content">
                 <div className="top-modal">
                   <h3 className="section-heading top-modal">{title}</h3>

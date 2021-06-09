@@ -21,6 +21,8 @@ function App() {
   return (
     <>
       <div className="container">
+        {showModal ? <div className="modal-backdrop" /> : null}
+
         <Navbar />
         <Home />
         <Portfolio openModal={openModal} setModalType={setModalType} />

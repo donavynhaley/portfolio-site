@@ -1,3 +1,13 @@
+.modal-backdrop {
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 14;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
 .modal-background {
     top: 10%;
     left: 10%;
@@ -8,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 11;
+    z-index: 15;
     margin: 0 auto;
     border-radius: 0.5rem;
 }
@@ -22,7 +32,7 @@
     color: #000;
     display: flex;
     position: relative;
-    z-index: 10;
+    z-index: 16;
     border-radius: 0.5rem;
 }
 
