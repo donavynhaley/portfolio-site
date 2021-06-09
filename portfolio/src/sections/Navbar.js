@@ -56,7 +56,7 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item" id="resume">
                         <a href={resume} download>
-                            <Button text="Resume" />
+                            <Button svg={true} text="Resume" />
                         </a>
                     </li>
                 </ul>

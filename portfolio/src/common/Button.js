@@ -1,10 +1,11 @@
 import React from 'react'
-import closeSVG from '../assets/close.svg'
+import downloadSVG from '../assets/download.svg'
 const Button = ({ text, clickFunction, svg, addClass }) => {
     return (
         <button className={`btn btn-primary ${addClass !== undefined ? addClass : ""}`} onClick={clickFunction}>
-            {svg === true ? <img className="btn-svg" src={closeSVG} alt="X" /> : null}
             {text}
+            {svg === true ? <img className="btn-svg" src={downloadSVG} alt="X" /> : null}
+
         </button>
     )
 }
