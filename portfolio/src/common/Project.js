@@ -1,10 +1,11 @@
 import React from 'react'
 import githubIcon from '../assets/github.svg'
 import globeIcon from '../assets/globe.svg'
-import open from "../assets/open.svg"
+import plus from "../assets/plus.svg"
 
 
-const Project = ({ title, img, githubLink, liveLink, openModal }) => {
+const Project = (props) => {
+    const { title, img, githubLink, liveLink, openModal, setModalType, modalType } = props;
     return (
         <div className="project">
             <h3>{title}</h3>
@@ -19,7 +20,12 @@ const Project = ({ title, img, githubLink, liveLink, openModal }) => {
                                 <img src={globeIcon} alt="globe icon" />
                             </a>
                         </div>
-                        <img className="icon" src={open} alt="see more" onClick={openModal} />
+                        <div className="click-modal" onClick={() => {
+                            openModal();
+                            setModalType(modalType)
+                        }}>
+                            <img src={plus} alt="see more" />
+                        </div>
                     </div>
                 </div>
                 <img className="img-fluid" src={img} alt="cabin" />

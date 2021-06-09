@@ -20,7 +20,7 @@ const Navbar = () => {
 
             const totalDocScrollLength = docHeight - windowHeight;
             const scrollPostion = Math.floor(top / totalDocScrollLength * 100);
-            console.log(scrollPostion)
+
             // 18 69 85
             const portfolioPage = 18;
             const aboutPage = 69;
