@@ -3,7 +3,6 @@ import React from 'react'
 const Toast = ({ toastList, setToastList }) => {
 
     const handleClose = (id) => {
-        console.log(id)
         setToastList(toastList.filter((toast) => {
             return toast.id !== id;
         }))

@@ -42,7 +42,6 @@ const Contact = ({ toastList, setToastList, toastCount, setToastCount }) => {
             .then(function (response) {
                 // upon sucess adds toast notification
                 addToast(true)
-                console.log(response)
             })
             .catch(function (error) {
                 addToast(false);
@@ -63,8 +62,8 @@ const Contact = ({ toastList, setToastList, toastCount, setToastCount }) => {
         else {
             toast = {
                 id: toastCount,
-                title: 'Danger',
-                description: 'Oh no! Something went wrong please try again later',
+                title: 'Failed',
+                description: 'Something went wrong. Please try again later',
                 backgroundColor: '#5cb85c',
                 icon: errorIcon
             }
