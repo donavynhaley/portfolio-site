@@ -110,7 +110,9 @@ const Contact = ({ toastList, setToastList, toastCount, setToastCount }) => {
                                     <div className="error">{errors.message}</div>
                                 ) : null}
                             </div>
-                            <Button type="submit" text="Send" addClass="xl" />
+                            <Button variant="contained" color="primary">
+                                Primary
+</Button>
                         </Form>
                     )}
                 </Formik>

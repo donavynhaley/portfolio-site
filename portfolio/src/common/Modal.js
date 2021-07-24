@@ -44,7 +44,7 @@ const Modal = ({ showModal, setShowModal, modalType }) => {
         link: "https://github.com/nmrugg/stockfish.js/",
       }],
       github: "https://github.com/donavynhaley/chess-ai",
-      live: null,
+      live: "https://chess-ai-visualizer.netlify.app",
       devto: null
     },
     {
